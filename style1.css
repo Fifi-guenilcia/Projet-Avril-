@@ -1,0 +1,413 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f9f9;
+  color: #333;
+  width: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+header, footer {
+  background-color: #00bfff;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+h1{
+  margin-left: 10px;
+  color: #ffffff;
+ }
+  
+  h1 span {
+  font-size: 45px;
+  font-weight: bold;
+  color: #000;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  color: #264653;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+ #inscription {
+  padding: 40px 20px;
+  background-color: #00bfff;
+  color: white;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+#inscription h2 {
+  text-align: center;
+ font-size: 30px;
+text-decoration: underline solid #e89393 4px;
+text-underline-offset: 8px; 
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+}
+
+form button {
+  background-color: #e89393;
+  color: white;
+  padding: 10px 110px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #d76c6c;
+}
+/* partie accueil */
+#accueil{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 50px;
+  position: relative;
+  z-index: 1;
+  animation: slideshow 6s infinite;
+  
+}
+       
+@keyframes slideshow {
+ 0% {background-image:url("homme1.jpg");}
+ 25% {background-image: url("logoD.jpg");}
+50% {background-image: url("docteur.jpg");}
+100% {background-image:url("hopital1.jpg");}
+}
+
+#accueil h2{
+    display: flex
+    align-items: center;
+    color:  #000;
+    fint-weight: blod;
+}
+
+#accueil p{
+     color: white;
+     font-size: 15px;
+}
+
+.partie1 h3{
+ text-align: center;
+ font-size: 30px;
+text-decoration: underline solid #00bfff 4px;
+text-underline-offset: 8px; 
+ }
+
+.partie2 img{
+    margin-left: 5px;
+    margin-bottom: 5px;
+    
+}
+
+#apropos h2{
+  text-align: center;
+ font-size: 30px;
+text-decoration: underline solid #00bfff 4px;
+text-underline-offset: 10px; 
+}
+
+#apropos .p1, .p2{
+    display: block
+}
+
+
+#contact h2{
+text-align: center;
+font-size: 30px;
+text-decoration: underline solid #00bfff 4px;
+text-underline-offset: 8px; 
+    
+}
+
+#contact{
+    background-color: #e89393;
+    padding: 20px 40px;
+    color: white;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.b1 .b2{
+  background-color: #00bfff;
+  color: white;
+  padding: 10px 120px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.b2{
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.b1 input,
+form textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.b1 label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#conseils{
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #00bfff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+#conseils details {
+  margin-bottom: 1rem;
+  background: white;
+  border: 1px solid #d3e0dc;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+#conseils summary {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color:  #345c9c;
+  cursor: pointer;
+  list-style: none;
+}
+
+#conseils details[open] summary {
+  color: #1d3557;
+}
+
+#conseils p {
+  margin-top: 0.8rem;
+  color: #264653;
+  line-height: 1.5;
+}
+
+
+.titre-souligne{
+  text-align: center;
+  font-size: 30px;
+text-decoration: underline solid #00bfff 4px;
+text-underline-offset: 8px;     
+}
+
+#notre-equipe {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #e89393;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.grille-equipe {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.carte-medecin {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.carte-medecin:hover {
+  transform: translateY(-5px);
+}
+
+.carte-medecin img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #00bfff;
+}
+
+.carte-medecin h3 {
+  margin-bottom: 0.3rem;
+  color:  #264653;
+}
+
+.carte-medecin p {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.carte-medecin small {
+  font-style: italic;
+  color: black;
+}
+
+
+.section-footer{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+.section-footer p a{
+        justify-content: center;
+        margin-right: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        
+        
+}
+/* responsivité */
+
+/* Écrans de taille moyenne (tablettes) */
+@media (max-width: 768px) {
+  header, footer {
+    padding: 0.8rem 0;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  main, #conseils, #notre-equipe {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  form input,
+  form textarea,
+  .b1 input {
+    width: 100%;
+  }
+
+  form button,
+  .b1 .b2 {
+    padding: 10px 60px;
+  }
+
+  #accueil {
+    height: auto;
+    padding: 30px 10px;
+  }
+
+  .grille-equipe {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Petits écrans (mobiles) */
+@media (max-width: 480px) {
+  h1 span {
+    font-size: 30px;
+  }
+
+  #inscription h2,
+  .partie1 h3,
+  #apropos h2,
+  #contact h2,
+  .titre-souligne {
+    font-size: 22px;
+  }
+
+  form button,
+  .b1 .b2 {
+    padding: 10px 30px;
+  }
+
+  nav a {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+
+  .carte-medecin img {
+    width: 100px;
+    height: 100px;
+  }
+
+  #accueil h2 {
+    font-size: 20px;
+  }
+
+  #accueil p {
+    font-size: 13px;
+  }
+
+  .section-footer {
+    flex-direction: column;
+    font-size: 13px;
+    padding: 1rem;
+  }
+
+  .section-footer p a {
+    display: block;
+    margin: 5px 0;
+  }
+}
+ 
+ 
